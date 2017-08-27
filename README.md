@@ -20,15 +20,17 @@ If you find this work useful in your research, please consider citing:
 
 ## Data generation
 
-Go to datagen/oxford and run generate_oxford_dataset.m. This script downloads Oxford Building dataset, extracts "good and ok" subsets of images, and generates synthetic Rolling Shutter dataset. It also downloads the test sets that were used in our experiments. To generate synthetic RS images on any other dataset, run datagen/generate_dataset.m.
+Go to datagen/oxford/ folder and run generate_oxford_dataset.m. This script downloads Oxford Building dataset, extracts "good and ok" image subsets, and generates synthetic Rolling Shutter dataset. It also downloads the test sets that were used in our experiments. 
+
+To generate synthetic RS images on any other dataset, run datagen/generate_dataset.m.
 
 ## Training procedure
 
-Once the dataset is generated, to begin training, go to train/ and run
+Once the dataset is generated, to begin training, go to train/ folder and run
 
 	th run.lua
 
-The default paths are set for the Oxford Building dataset generated above. For any other dataset, make sure the training and validation paths are set appropriately. The models are stored in train/results/ folder.
+The default paths are set for the Oxford Building dataset generated above. For any other dataset, make sure the training and validation paths are set appropriately. The trained models will be saved in train/results/ folder.
 
 ## Experiments
 
@@ -36,4 +38,6 @@ To perform end-to-end rectification on a test set, go to experiments/ folder and
 
 	./full_rectify.sh
 
-The default paths are set for the test sets downloaded from the Data generation script. For other datasets, set the paths appropriately. This script performs the CNN forward pass and extracts the estimated motion vector, and subsequently calls a matlab script that uses the motion vector to rectify the images. The rectified images are stored in experiments/results/rectified_imgs/ folder.
+The default paths are set for the test sets downloaded from the Data generation script. For other test sets, make sure the data and model paths are set appropriately. 
+
+This script performs the CNN forward pass to estimate the motion vectors, and subsequently calls a matlab script that uses this motion vector to rectify the images. The rectified images are stored in experiments/results/rectified_imgs/ folder.
