@@ -3,8 +3,8 @@
 mkdir -p ../../data/
 mkdir -p ../../data/buildings/
 
-#wget -P ../../data/buildings/ http://www.ee.iitm.ac.in/~ee11d035/building.tar.gz
-#tar -xvzf ../../data/buildings/building.tar.gz -C ../../data/buildings/
+wget -P ../../data/buildings/ http://www.ee.iitm.ac.in/~ee11d035/building.tar.gz
+tar -xvzf ../../data/buildings/building.tar.gz -C ../../data/buildings/
 
 mv ../../data/buildings/building_trans_rot_extended/train ../../data/buildings/building_trans_rot_extended/images
 mkdir -p ../../data/buildings/building_trans_rot_extended/train
