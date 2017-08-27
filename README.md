@@ -8,7 +8,7 @@ If you find this work useful in your research, please consider citing:
 
     @inproceedings{UnrollingShutter_CVPR17,
         Author = {Vijay Rengarajan and Yogesh Balaji and A.N. Rajagopalan},
-        Title = {Deep Metric Learning via Lifted Structured Feature Embedding},
+        Title = {Unrolling the Shutter: CNN to Correct Motion Distortions},
         Booktitle = {Computer Vision and Pattern Recognition (CVPR)},
         Year = {2017}
     }
