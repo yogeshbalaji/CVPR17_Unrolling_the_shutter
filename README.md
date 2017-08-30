@@ -22,7 +22,7 @@ If you find this work useful in your research, please consider citing:
 
 Go to datagen/oxford/ folder and run generate_oxford_dataset.m. This script downloads Oxford Building dataset, extracts "good and ok" image subsets, and generates synthetic Rolling Shutter dataset. It also downloads the test sets that were used in our experiments. 
 
-To generate the download the building dataset used in our paper (comprising building images of Sun, Oxford and Zurich datasets, go to datagen/buildings and run download_and_save.sh.
+To download the building dataset used in our paper (comprising building images of Sun, Oxford and Zurich datasets, go to datagen/buildings and run download_and_save.sh.
 
 To generate synthetic RS images on any other dataset, run datagen/generate_dataset.m.
 
