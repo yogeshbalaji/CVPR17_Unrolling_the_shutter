@@ -71,6 +71,7 @@ end
 model = torch.load(opt.network)
 model = cudnn.convert(model, nn)
 model = model:cuda()
+model:evaluate()
 
 local img = torch.Tensor(3,256,256)
 img_mean = torch.load(meanpath)
