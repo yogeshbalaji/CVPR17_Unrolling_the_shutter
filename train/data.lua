@@ -1,6 +1,6 @@
 opt_train = {
    data = opt.train_data_path,
-   dataset = 'folder',       -- imagenet / lsun / folder
+   dataset = 'folder',       
    batchSize = opt.batchSize,
    loadSize = 256,
    nThreads = opt.threads,           -- #  of data loading threads to use
@@ -10,7 +10,7 @@ opt_train = {
 
 opt_test = {
    data = opt.test_data_path,
-   dataset = 'folder',       -- imagenet / lsun / folder
+   dataset = 'folder',       
    batchSize = opt.batchSize,
    loadSize = 256,
    nThreads = opt.threads,           -- #  of data loading threads to use
